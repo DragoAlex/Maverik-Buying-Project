@@ -1,0 +1,978 @@
+{
+  "meta": {
+    "generated": "30.04.2026 09:57",
+    "source": "Maverick Buying Analyzer v2"
+  },
+  "kpis": {
+    "total_orders": 89,
+    "total_volume": 1548745.08,
+    "maverick_orders": 31,
+    "maverick_volume": 416911.49,
+    "maverick_rate_orders": 34.8,
+    "maverick_rate_volume": 26.9,
+    "deception_count": 7,
+    "process_error_count": 6,
+    "unclarified_count": 18
+  },
+  "funnel": [
+    {
+      "stage": "S2 – Gremiumspflichtig",
+      "excluded": 8,
+      "volume": 925266.7,
+      "remaining": 89
+    },
+    {
+      "stage": "S3 – Zeitabstand > 3 Wo.",
+      "excluded": 29,
+      "volume": 106712.92,
+      "remaining": 81
+    },
+    {
+      "stage": "S4 – Unterschiedl. Material",
+      "excluded": 0,
+      "volume": 0.0,
+      "remaining": 52
+    },
+    {
+      "stage": "S5a – Rahmenvertrag OK",
+      "excluded": 12,
+      "volume": 95442.74,
+      "remaining": 52
+    },
+    {
+      "stage": "S5b – Einkäufer bestätigt",
+      "excluded": 8,
+      "volume": 3796.67,
+      "remaining": 40
+    },
+    {
+      "stage": "Maverick-Kandidaten",
+      "excluded": 0,
+      "volume": 416911.49,
+      "remaining": 32
+    }
+  ],
+  "suppliers": [
+    {
+      "name": "Rahmen Partner KG",
+      "orders": 15,
+      "volume": 54324.32,
+      "maverick": 14,
+      "mav_pct": 93.3,
+      "avg_score": 5.6
+    },
+    {
+      "name": "Verdächtiger Lieferant",
+      "orders": 7,
+      "volume": 327578.25,
+      "maverick": 7,
+      "mav_pct": 100.0,
+      "avg_score": 14.0
+    },
+    {
+      "name": "SplitLieferant GmbH",
+      "orders": 6,
+      "volume": 28800.0,
+      "maverick": 6,
+      "mav_pct": 100.0,
+      "avg_score": 8.5
+    },
+    {
+      "name": "Technik AG",
+      "orders": 5,
+      "volume": 9225.05,
+      "maverick": 4,
+      "mav_pct": 80.0,
+      "avg_score": 2.4
+    },
+    {
+      "name": "Normlieferant 2",
+      "orders": 6,
+      "volume": 34564.55,
+      "maverick": 0,
+      "mav_pct": 0.0,
+      "avg_score": 0.8
+    },
+    {
+      "name": "Normlieferant 1",
+      "orders": 6,
+      "volume": 46803.76,
+      "maverick": 0,
+      "mav_pct": 0.0,
+      "avg_score": 0.3
+    },
+    {
+      "name": "Kleinlieferant",
+      "orders": 8,
+      "volume": 3796.67,
+      "maverick": 0,
+      "mav_pct": 0.0,
+      "avg_score": 6.0
+    },
+    {
+      "name": "Großlieferant AG",
+      "orders": 8,
+      "volume": 925266.7,
+      "maverick": 0,
+      "mav_pct": 0.0,
+      "avg_score": 0.0
+    },
+    {
+      "name": "Normlieferant 5",
+      "orders": 6,
+      "volume": 24278.19,
+      "maverick": 0,
+      "mav_pct": 0.0,
+      "avg_score": 0.0
+    },
+    {
+      "name": "Normlieferant 4",
+      "orders": 6,
+      "volume": 36131.17,
+      "maverick": 0,
+      "mav_pct": 0.0,
+      "avg_score": 0.0
+    },
+    {
+      "name": "Normlieferant 3",
+      "orders": 6,
+      "volume": 45465.64,
+      "maverick": 0,
+      "mav_pct": 0.0,
+      "avg_score": 0.8
+    },
+    {
+      "name": "Versorgung GmbH",
+      "orders": 10,
+      "volume": 12510.78,
+      "maverick": 0,
+      "mav_pct": 0.0,
+      "avg_score": 0.0
+    }
+  ],
+  "buyers": [
+    {
+      "id": "EK-001",
+      "orders": 40,
+      "volume": 1210088.63,
+      "maverick": 17,
+      "mav_pct": 42.5,
+      "deception_score": 24
+    },
+    {
+      "id": "EK-002",
+      "orders": 34,
+      "volume": 230178.75,
+      "maverick": 8,
+      "mav_pct": 23.5,
+      "deception_score": 34
+    },
+    {
+      "id": "EK-003",
+      "orders": 7,
+      "volume": 104681.03,
+      "maverick": 6,
+      "mav_pct": 85.7,
+      "deception_score": 16
+    },
+    {
+      "id": "EK-004",
+      "orders": 8,
+      "volume": 3796.67,
+      "maverick": 0,
+      "mav_pct": 0.0,
+      "deception_score": 0
+    }
+  ],
+  "departments": [
+    {
+      "name": "KST-1010",
+      "orders": 38,
+      "volume": 1075549.18,
+      "maverick": 14,
+      "mav_pct": 36.8
+    },
+    {
+      "name": "KST-5050",
+      "orders": 7,
+      "volume": 327578.25,
+      "maverick": 7,
+      "mav_pct": 100.0
+    },
+    {
+      "name": "KST-2020",
+      "orders": 25,
+      "volume": 103262.67,
+      "maverick": 6,
+      "mav_pct": 24.0
+    },
+    {
+      "name": "KST-3030",
+      "orders": 11,
+      "volume": 38558.31,
+      "maverick": 4,
+      "mav_pct": 36.4
+    },
+    {
+      "name": "KST-4040",
+      "orders": 8,
+      "volume": 3796.67,
+      "maverick": 0,
+      "mav_pct": 0.0
+    }
+  ],
+  "requests": [
+    {
+      "buyer": "EK-001",
+      "dept": "KST-1010",
+      "total_mav": 14,
+      "missing_approval": 14,
+      "volume": 51922.75
+    },
+    {
+      "buyer": "EK-002",
+      "dept": "KST-2020",
+      "total_mav": 6,
+      "missing_approval": 6,
+      "volume": 28800.0
+    },
+    {
+      "buyer": "EK-003",
+      "dept": "KST-3030",
+      "total_mav": 4,
+      "missing_approval": 4,
+      "volume": 8610.49
+    },
+    {
+      "buyer": "EK-001",
+      "dept": "KST-5050",
+      "total_mav": 3,
+      "missing_approval": 3,
+      "volume": 137764.41
+    },
+    {
+      "buyer": "EK-002",
+      "dept": "KST-5050",
+      "total_mav": 2,
+      "missing_approval": 2,
+      "volume": 94357.86
+    },
+    {
+      "buyer": "EK-003",
+      "dept": "KST-5050",
+      "total_mav": 2,
+      "missing_approval": 2,
+      "volume": 95455.98
+    }
+  ],
+  "timeline": [
+    {
+      "month": "2024-01",
+      "all_orders": 29,
+      "mav_orders": 15,
+      "volume": 357502.77
+    },
+    {
+      "month": "2024-02",
+      "all_orders": 13,
+      "mav_orders": 5,
+      "volume": 470825.22
+    },
+    {
+      "month": "2024-03",
+      "all_orders": 6,
+      "mav_orders": 2,
+      "volume": 32504.84
+    },
+    {
+      "month": "2024-04",
+      "all_orders": 8,
+      "mav_orders": 2,
+      "volume": 199182.87
+    },
+    {
+      "month": "2024-05",
+      "all_orders": 8,
+      "mav_orders": 2,
+      "volume": 133723.98
+    },
+    {
+      "month": "2024-06",
+      "all_orders": 5,
+      "mav_orders": 0,
+      "volume": 33236.58
+    },
+    {
+      "month": "2024-07",
+      "all_orders": 4,
+      "mav_orders": 1,
+      "volume": 17824.97
+    },
+    {
+      "month": "2024-08",
+      "all_orders": 5,
+      "mav_orders": 2,
+      "volume": 19554.02
+    },
+    {
+      "month": "2024-09",
+      "all_orders": 4,
+      "mav_orders": 0,
+      "volume": 155907.63
+    },
+    {
+      "month": "2024-10",
+      "all_orders": 6,
+      "mav_orders": 2,
+      "volume": 127598.04
+    },
+    {
+      "month": "2024-11",
+      "all_orders": 1,
+      "mav_orders": 0,
+      "volume": 884.16
+    }
+  ],
+  "transactions": [
+    {
+      "order_id": "PO-TD000",
+      "supplier": "Verdächtiger Lieferant",
+      "category": "Dienstleistungen",
+      "dept": "KST-5050",
+      "buyer": "EK-001",
+      "date": "06.01.2024",
+      "amount": 48528.89,
+      "description": "Beratungsleistung allgemein",
+      "contract": "Nein",
+      "classification": "🔴 Täuschungsverdacht",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 14,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (7x)",
+        "Mehrere Einkäufer ohne Rahmenvertrag (3)",
+        "Beträge knapp unter Gremiumschwelle (7x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-TD002",
+      "supplier": "Verdächtiger Lieferant",
+      "category": "Dienstleistungen",
+      "dept": "KST-5050",
+      "buyer": "EK-003",
+      "date": "18.01.2024",
+      "amount": 46567.28,
+      "description": "Beratungsleistung allgemein",
+      "contract": "Nein",
+      "classification": "🔴 Täuschungsverdacht",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 14,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (7x)",
+        "Mehrere Einkäufer ohne Rahmenvertrag (3)",
+        "Beträge knapp unter Gremiumschwelle (7x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-TD001",
+      "supplier": "Verdächtiger Lieferant",
+      "category": "Dienstleistungen",
+      "dept": "KST-5050",
+      "buyer": "EK-002",
+      "date": "12.01.2024",
+      "amount": 48312.52,
+      "description": "Beratungsleistung allgemein",
+      "contract": "Nein",
+      "classification": "🔴 Täuschungsverdacht",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 14,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (7x)",
+        "Mehrere Einkäufer ohne Rahmenvertrag (3)",
+        "Beträge knapp unter Gremiumschwelle (7x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-TD005",
+      "supplier": "Verdächtiger Lieferant",
+      "category": "Dienstleistungen",
+      "dept": "KST-5050",
+      "buyer": "EK-003",
+      "date": "05.02.2024",
+      "amount": 48888.7,
+      "description": "Beratungsleistung allgemein",
+      "contract": "Nein",
+      "classification": "🔴 Täuschungsverdacht",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 14,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (7x)",
+        "Mehrere Einkäufer ohne Rahmenvertrag (3)",
+        "Beträge knapp unter Gremiumschwelle (7x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-TD004",
+      "supplier": "Verdächtiger Lieferant",
+      "category": "Dienstleistungen",
+      "dept": "KST-5050",
+      "buyer": "EK-002",
+      "date": "30.01.2024",
+      "amount": 46045.34,
+      "description": "Beratungsleistung allgemein",
+      "contract": "Nein",
+      "classification": "🔴 Täuschungsverdacht",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 14,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (7x)",
+        "Mehrere Einkäufer ohne Rahmenvertrag (3)",
+        "Beträge knapp unter Gremiumschwelle (7x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-TD006",
+      "supplier": "Verdächtiger Lieferant",
+      "category": "Dienstleistungen",
+      "dept": "KST-5050",
+      "buyer": "EK-001",
+      "date": "11.02.2024",
+      "amount": 44431.17,
+      "description": "Beratungsleistung allgemein",
+      "contract": "Nein",
+      "classification": "🔴 Täuschungsverdacht",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 14,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (7x)",
+        "Mehrere Einkäufer ohne Rahmenvertrag (3)",
+        "Beträge knapp unter Gremiumschwelle (7x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-TD003",
+      "supplier": "Verdächtiger Lieferant",
+      "category": "Dienstleistungen",
+      "dept": "KST-5050",
+      "buyer": "EK-001",
+      "date": "24.01.2024",
+      "amount": 44804.35,
+      "description": "Beratungsleistung allgemein",
+      "contract": "Nein",
+      "classification": "🔴 Täuschungsverdacht",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 14,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (7x)",
+        "Mehrere Einkäufer ohne Rahmenvertrag (3)",
+        "Beträge knapp unter Gremiumschwelle (7x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-SP000",
+      "supplier": "SplitLieferant GmbH",
+      "category": "Büromaterial",
+      "dept": "KST-2020",
+      "buyer": "EK-002",
+      "date": "11.01.2024",
+      "amount": 4800.0,
+      "description": "Kopierpapier A4",
+      "contract": "Nein",
+      "classification": "🟠 Möglicher Prozessfehler",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 9,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (6x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-SP002",
+      "supplier": "SplitLieferant GmbH",
+      "category": "Büromaterial",
+      "dept": "KST-2020",
+      "buyer": "EK-002",
+      "date": "19.01.2024",
+      "amount": 4800.0,
+      "description": "Kopierpapier A4",
+      "contract": "Nein",
+      "classification": "🟠 Möglicher Prozessfehler",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 9,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (6x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-SP004",
+      "supplier": "SplitLieferant GmbH",
+      "category": "Büromaterial",
+      "dept": "KST-2020",
+      "buyer": "EK-002",
+      "date": "27.01.2024",
+      "amount": 4800.0,
+      "description": "Kopierpapier A4",
+      "contract": "Nein",
+      "classification": "🟠 Möglicher Prozessfehler",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 9,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (6x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-SP001",
+      "supplier": "SplitLieferant GmbH",
+      "category": "Büromaterial",
+      "dept": "KST-2020",
+      "buyer": "EK-002",
+      "date": "15.01.2024",
+      "amount": 4800.0,
+      "description": "Kopierpapier weiß A4",
+      "contract": "Nein",
+      "classification": "🟠 Möglicher Prozessfehler",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 8,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (6x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-SP003",
+      "supplier": "SplitLieferant GmbH",
+      "category": "Büromaterial",
+      "dept": "KST-2020",
+      "buyer": "EK-002",
+      "date": "23.01.2024",
+      "amount": 4800.0,
+      "description": "Kopierpapier weiß A4",
+      "contract": "Nein",
+      "classification": "🟠 Möglicher Prozessfehler",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 8,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (6x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-SP005",
+      "supplier": "SplitLieferant GmbH",
+      "category": "Büromaterial",
+      "dept": "KST-2020",
+      "buyer": "EK-002",
+      "date": "31.01.2024",
+      "amount": 4800.0,
+      "description": "Kopierpapier weiß A4",
+      "contract": "Nein",
+      "classification": "🟠 Möglicher Prozessfehler",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 8,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Kein Rahmenvertrag",
+        "Systematisch ohne Rahmenvertrag (6x)"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R001",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "16.05.2024",
+      "amount": 10415.52,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R002",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "06.02.2024",
+      "amount": 6349.18,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R003",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "05.05.2024",
+      "amount": 1389.73,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R004",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "12.10.2024",
+      "amount": 2582.64,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R005",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "27.04.2024",
+      "amount": 1246.49,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R006",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "24.07.2024",
+      "amount": 566.43,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R011",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "22.04.2024",
+      "amount": 1301.34,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R010",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "07.08.2024",
+      "amount": 8600.95,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R009",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "14.10.2024",
+      "amount": 2666.68,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R008",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "22.08.2024",
+      "amount": 781.58,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R000",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "24.03.2024",
+      "amount": 2377.57,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R013",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "22.03.2024",
+      "amount": 8737.19,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R014",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "02.02.2024",
+      "amount": 2625.87,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-R012",
+      "supplier": "Rahmen Partner KG",
+      "category": "Verpackung",
+      "dept": "KST-1010",
+      "buyer": "EK-001",
+      "date": "25.01.2024",
+      "amount": 2281.58,
+      "description": "Kartonage standard",
+      "contract": "Ja",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🔴 Hoch",
+      "risk_score": 6,
+      "reasons": [
+        "Split-Verdacht: ähnliche Beschreibung + Zeitcluster",
+        "Generische Artikelbeschreibung",
+        "Rahmenvertrag vorhanden aber Split-Muster auffällig – Klärung nötig"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-M003",
+      "supplier": "Technik AG",
+      "category": "IT-Hardware",
+      "dept": "KST-3030",
+      "buyer": "EK-003",
+      "date": "31.01.2024",
+      "amount": 1450.32,
+      "description": "Drucker HP",
+      "contract": "Nein",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🟠 Mittel",
+      "risk_score": 3,
+      "reasons": [
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-M002",
+      "supplier": "Technik AG",
+      "category": "IT-Hardware",
+      "dept": "KST-3030",
+      "buyer": "EK-003",
+      "date": "21.01.2024",
+      "amount": 2638.29,
+      "description": "Klimaanlage Mitsubishi",
+      "contract": "Nein",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🟠 Mittel",
+      "risk_score": 3,
+      "reasons": [
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-M001",
+      "supplier": "Technik AG",
+      "category": "IT-Hardware",
+      "dept": "KST-3030",
+      "buyer": "EK-003",
+      "date": "11.01.2024",
+      "amount": 2432.67,
+      "description": "Netzwerkswitch Cisco",
+      "contract": "Nein",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🟠 Mittel",
+      "risk_score": 3,
+      "reasons": [
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag"
+      ],
+      "approval_doc": null
+    },
+    {
+      "order_id": "PO-M004",
+      "supplier": "Technik AG",
+      "category": "IT-Hardware",
+      "dept": "KST-3030",
+      "buyer": "EK-003",
+      "date": "10.02.2024",
+      "amount": 2089.21,
+      "description": "Bildschirm Samsung",
+      "contract": "Nein",
+      "classification": "🟡 Ungeklärter Einzelfall",
+      "risk_level": "🟠 Mittel",
+      "risk_score": 3,
+      "reasons": [
+        "Generische Artikelbeschreibung",
+        "Kein Rahmenvertrag"
+      ],
+      "approval_doc": null
+    }
+  ]
+}
