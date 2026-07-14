@@ -121,6 +121,66 @@ df = run_analysis(
 ```
 Benötigt: `pip install sqlalchemy psycopg2-binary`
 
+## Category-Management-Analysepaket (`analyse_definition/`)
+
+Erweiterung des Stacks um Category-Management-Auswertungen für den Einkauf.
+Lokal, dateibasiert, kein Server. Jede Ausgabe trägt n, Zeitraum und
+Datengrundlage (Decision-Support-Prinzip: nie stillschweigend rechnen, als
+wäre die Historie ausreichend).
+
+> **Hinweis zur Entstehung:** Der ursprünglich referenzierte, extern
+> geprüfte Basis-Stack (`analyse_definition/` aus dem vorherigen
+> Ausbaupaket) war in diesem Repository nicht vorhanden. `stats_core.py`
+> wurde daher nach der Spezifikation des Prüfauftrags neu implementiert
+> (Quantile Typ 7, MAD roh, Varianz n−1, Pearson/Spearman/Eta,
+> n≥3-Sperre) und über `pruefung/test_oracle.py` gegen NumPy als
+> unabhängige Referenz abgesichert. Liegt der extern geprüfte Kern später
+> vor, kann er dank identischer Signaturen direkt eingetauscht werden.
+
+### Module
+
+| Modul | Phase | Inhalt |
+|---|---|---|
+| `stats_core.py` | Fundament | Portabler Statistik-Kern (reine Listen, ohne Pandas/NumPy): Quantile Typ 7, MAD roh, Varianz n−1, Variationskoeffizient, Pearson/Spearman/Eta mit n≥3-Sperre. Einzige Statistik-Implementierung im System. |
+| `zeitreihen.py` | 0 | Monats-Bucketing der P2P-Belegzeilen je Schlüsselkombination (Material, Warengruppe, Lieferant, Material×Lieferant). Je Bucket: Summe Menge, Summe Wert, **mengengewichteter** Durchschnittspreis (Summe Wert / Summe Menge), Anzahl Belege, Preisbasis-Kennzeichen. |
+
+### Grundsätze Zeitreihen (Phase 0)
+
+- **Lücken bleiben Lücken:** Monate ohne Belege werden nicht mit 0
+  aufgefüllt — null Bestellungen ist keine Preisinformation. Funktionen,
+  die durchgängige Reihen brauchen, dokumentieren ihren Lücken-Umgang
+  einzeln. `monatsluecken()` weist Lücken explizit aus.
+- **Preisbasis konfigurierbar:** `KONFIG["preisbasis"]` = `"auto"`
+  (Default: Rechnungs-Ist-Preis, wenn vorhanden, sonst Bestellpreis),
+  `"bestellung"` oder `"rechnung"`. Jeder Bucket trägt ein Kennzeichen
+  (`bestellung` / `rechnung` / `gemischt`).
+- **Befunde statt stiller Annahmen:** fehlende Warengruppe, unlesbares
+  Datum oder unbrauchbare Menge/Preis erzeugen Befunde;
+  `historientiefe()` meldet „Aussagekraft eingeschränkt, n=X Monate"
+  unterhalb der konfigurierten Schwelle (Default 12 Monate).
+
+### Tests
+
+```bash
+python -m pytest analyse_definition pruefung   # oder:
+python -m unittest discover -s analyse_definition -t .
+```
+
+`pruefung/test_oracle.py` prüft `stats_core` gegen NumPy als Orakel
+(einzige Stelle mit NumPy-Bedarf; der Kern selbst bleibt frei davon).
+
+### Bewusst nicht umgesetzt
+
+- **Sentiment-Analyse:** Es existiert keine Textquelle dafür.
+  Dokumentierter Andockpunkt für später: Ereignistexte aus der
+  Informationsfluss-Zuordnungsstrecke, sobald diese produktiv Volumen
+  liefert.
+- **ML-Modelle:** Preisprognosen nutzen ausschließlich die
+  Baseline-Verfahren des Stacks (Phase 4).
+- **DEF-Klassifizierung aus Daten:** Beschaffungsrisiko steht nicht in
+  Belegen. DEF bleibt manuelles Eingabefeld in der Konfiguration mit
+  Default „unbewertet".
+
 ## Lizenz
 
 MIT
