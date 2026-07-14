@@ -1,0 +1,3 @@
+# Nur für die Prüfschicht (Orakel-Tests) — der Kern läuft ohne Abhängigkeiten.
+numpy
+pytest
