@@ -40,6 +40,7 @@ DIMENSIONEN = {
     "warengruppe": ("warengruppe",),
     "lieferant": ("lieferant",),
     "material_lieferant": ("materialnummer", "lieferant"),
+    "warengruppe_lieferant": ("warengruppe", "lieferant"),
 }
 
 PLATZHALTER_WARENGRUPPE = "(ohne Warengruppe)"

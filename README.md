@@ -142,7 +142,8 @@ wäre die Historie ausreichend).
 | Modul | Phase | Inhalt |
 |---|---|---|
 | `stats_core.py` | Fundament | Portabler Statistik-Kern (reine Listen, ohne Pandas/NumPy): Quantile Typ 7, MAD roh, Varianz n−1, Variationskoeffizient, Pearson/Spearman/Eta mit n≥3-Sperre. Einzige Statistik-Implementierung im System. |
-| `zeitreihen.py` | 0 | Monats-Bucketing der P2P-Belegzeilen je Schlüsselkombination (Material, Warengruppe, Lieferant, Material×Lieferant). Je Bucket: Summe Menge, Summe Wert, **mengengewichteter** Durchschnittspreis (Summe Wert / Summe Menge), Anzahl Belege, Preisbasis-Kennzeichen. |
+| `zeitreihen.py` | 0 | Monats-Bucketing der P2P-Belegzeilen je Schlüsselkombination (Material, Warengruppe, Lieferant, Material×Lieferant, Warengruppe×Lieferant). Je Bucket: Summe Menge, Summe Wert, **mengengewichteter** Durchschnittspreis (Summe Wert / Summe Menge), Anzahl Belege, Preisbasis-Kennzeichen. |
+| `spend_analyse.py` | 1 | Spend-Würfel Warengruppe×Lieferant×Monat, Pareto/ABC auf den Jahres-Spend (letzte 12 Kalendermonate; Grenzen 80/95 % konfigurierbar), Konzentrationskennzahlen je Warengruppe (Top-1-/Top-3-Lieferantenanteil). Ausgaben: `spend_wuerfel.csv`, `abc_material.csv`, `abc_lieferant.csv`, `konzentration.csv`, `spend.md` — jede Datei trägt Zeitraum, n und Preisbasis als Metazeile. |
 
 ### Grundsätze Zeitreihen (Phase 0)
 

@@ -22,7 +22,7 @@ mit weniger und weist die Einschränkung je Modul aus.
 |---|---|---|---|
 | `stats_core.py` | Fundament | ✅ | Portabler Statistik-Kern (reine Listen, ohne Pandas/NumPy): Quantile Typ 7, MAD roh, Varianz n−1, Variationskoeffizient, Pearson/Spearman/Eta mit n≥3-Sperre. Einzige Statistik-Implementierung im System. |
 | `zeitreihen.py` | 0 | ✅ | Monats-Bucketing je Schlüsselkombination (Material, Warengruppe, Lieferant, Material×Lieferant) mit mengengewichtetem Durchschnittspreis, konfigurierbarer Preisbasis und expliziter Lückenbehandlung. |
-| `spend_analyse.py` | 1 | geplant | Spend-Würfel Warengruppe×Lieferant×Monat, Pareto/ABC (80/95 %), Konzentrationskennzahlen (Top-1/Top-3-Lieferantenanteil). |
+| `spend_analyse.py` | 1 | ✅ | Spend-Würfel Warengruppe×Lieferant×Monat, Pareto/ABC auf den Jahres-Spend (letzte 12 Kalendermonate; Grenzen 80/95 % konfigurierbar), Konzentrationskennzahlen (Top-1/Top-3-Lieferantenanteil). Ausgaben: `spend_wuerfel.csv`, `abc_material.csv`, `abc_lieferant.csv`, `konzentration.csv`, `spend.md` — jede Datei trägt Zeitraum, n und Preisbasis als Metazeile. |
 | `kategorie_analyse.py` | 2 | geplant | ABC×XYZ-Klassifizierung (XYZ aus Variationskoeffizient der Monatsmengen; unter 6 Monaten Klasse „?"), DEF als manuelles Konfigfeld. |
 | `preis_korrelation.py` | 3 | geplant | Spearman auf monatlichen Preisänderungen (nie Niveaus), n≥12-Überlappung, Verhandlungsbündel-Kandidaten ab \|rho\| ≥ 0.7. |
 | `preisindex.py` | 4 | geplant | Laspeyres-Preisindex je Warengruppe/Lieferant (Basis = 100), Trend 3/6/12 Monate, Baseline-Prognose mit Rückwärts-Validierung. |
